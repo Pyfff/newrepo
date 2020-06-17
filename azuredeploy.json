@@ -38,7 +38,7 @@
     },
     "vmSize": {
       "type": "string",
-      "defaultValue": "Standard_D2_v3",
+      "defaultValue": "Standard_D1_v2",
       "metadata": {
         "description": "Size of the virtual machine."
       }
@@ -58,10 +58,10 @@
     "subnetName": "Subnet",
     "subnetPrefix": "10.0.0.0/24",
     "publicIPAddressName": "myPublicIP",
-    "vmName": "SimpleWinVM",
-    "virtualNetworkName": "MyVNET",
+    "vmName": "VMforNataly",
+    "virtualNetworkName": "VNETforNataly",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
-    "networkSecurityGroupName": "default-NSG"
+    "networkSecurityGroupName": "NSGforNataly"
   },
   "resources": [
     {
